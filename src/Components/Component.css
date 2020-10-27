@@ -1,0 +1,47 @@
+.display{
+    width: 100px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: aliceblue;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.result{
+    font-size: 40px;
+    width: 100%;
+}
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_field{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    font-size: 20px;
+}
+
+input{
+    width: 250px;
+    height: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.calculate_btn{
+    font-size: 20px;
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: none;
+    transition: transform 300ms;
+}
+.calculate_btn:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+}

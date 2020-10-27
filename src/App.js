@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Metric from "./Components/Metric";
+import Imperial from "./Components/Imperial";
 import './App.css';
+import {Tabs, TabList, TabPanel} from 'react-tabs';
+import {Tab} from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import 'react-tabs/style/react-tabs.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component{
+ 
+  render(){
+    return(
+      <div>
+      <h1>BMI Calculator</h1>
+      <Tabs>
+        <TabList>
+          <Tab>Metric</Tab>
+          <Tab>Imperial</Tab>
+        </TabList>
+
+        <TabPanel>
+          <h2>Metric System</h2>
+          <Metric  />
+        </TabPanel>
+        <TabPanel>
+          <h2>Imperial System</h2>
+          <Imperial  />
+        </TabPanel>
+      </Tabs>
+      <footer className="footer">Made by Vibhor Khanna in 2020</footer>
+  </div>
+    );
 }
-
-export default App;
+}
